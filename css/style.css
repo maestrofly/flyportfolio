@@ -9,7 +9,7 @@
 /* Basic */
 
 	body, input, select, textarea {
-		color: white;
+		color: rgb(119, 218, 28);
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 15pt;
 		font-weight: 300 !important;
@@ -18,7 +18,7 @@
 	}
 
 	body {
-		background: white;
+		background: rgb(248, 248, 248);
 		overflow: hidden;
 	}
 
@@ -81,7 +81,7 @@
 		height: 100%;
 		left: 0;
 		opacity: 0;
-		position: fixed;
+		position: absolute;
 		top: 0;
 		width: 100%;
 	}
@@ -89,11 +89,11 @@
 /* BG */
 
 	#bg {
-		-moz-animation: bg 60s linear infinite;
-		-webkit-animation: bg 60s linear infinite;
-		-o-animation: bg 60s linear infinite;
-		-ms-animation: bg 60s linear infinite;
-		animation: bg 60s linear infinite;
+		-moz-animation: bg 20s linear infinite;
+		-webkit-animation: bg 20s linear infinite;
+		-o-animation: bg 20s linear infinite;
+		-ms-animation: bg 20s linear infinite;
+		animation: bg 20s linear infinite;
 		-moz-backface-visibility: hidden;
 		-webkit-backface-visibility: hidden;
 		-o-backface-visibility: hidden;
@@ -105,12 +105,13 @@
 		-ms-transform: translate3d(0,0,0);
 		transform: translate3d(0,0,0);
 		/* Set your background with this */
-		background: #348cb2 url("images/face.JPG") bottom left;
+		background: #348cb2 url("images/face.JPG") ;
+		background-size: cover;
 		background-repeat: repeat-x;
+		background-position: center;
 		height: 100%;
 		left: 0;
 		opacity: 1;
-		position: absolute;
 		top: 0;
 	}
 	@-moz-keyframes bg { 0% { -moz-transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); } 100% { -moz-transform: translate3d(-2250px,0,0); -webkit-transform: translate3d(-2250px,0,0); -o-transform: translate3d(-2250px,0,0); -ms-transform: translate3d(-2250px,0,0); transform: translate3d(-2250px,0,0); } }
@@ -139,8 +140,8 @@
 		animation: overlay 1.5s 1.5s forwards;
 		background-attachment: fixed, fixed;
 		background-image: url("images/overlay-pattern.png"), url("images/overlay.svg");
-		background-position: top left, center center;
-		background-repeat: repeat, no-repeat;
+		background-position: cover;
+		background-repeat: cover;
 		background-size: auto, cover;
 		height: 100%;
 		left: 0;
@@ -155,7 +156,7 @@
 	#main {
 		height: 100%;
 		left: 0;
-		position: fixed;
+		position: absolute;
 		text-align: center;
 		top: 0;
 		width: 100%;
@@ -361,7 +362,7 @@
 
 					#header nav a:hover:before {
 						background-color: rgba(255, 255, 255, 0.175);
-						color: white;
+						color: rgb(255, 255, 255);
 					}
 
 				#header nav a:active {
